@@ -1,0 +1,14 @@
+
+.LoginForm{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+input{
+    width: 30%;
+    height: 10%;
+}
+textarea{
+    width: 30%;
+}
