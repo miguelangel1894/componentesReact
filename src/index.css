@@ -7,6 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav{
+  z-index: 2;
+  width: 100%;
+}
+
+aside{
+  width: 16%;
+  height: 100vh;
+}
+
+section{
+ width: 84%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

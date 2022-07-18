@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export const useForm = (initialForm, validateForm) => {
+export const useForm = (initialForm, validationsForm) => {
 
     const[form, setForm] = useState(initialForm)
     const[error, setError] = useState({})
@@ -17,14 +17,14 @@ export const useForm = (initialForm, validateForm) => {
         })
     }
 
-    const handeBlur = (e) =>{
+    const handleBlur = (e) =>{
         handleChange(e)
-        setError(validateForm(form))
+        setError(validationsForm(form))
     }
     
     const handleSubmit = (e) =>{
         e.preventDefault()
-        setError(validateForm(form))
+        setError(validationsForm(form))
 
         if (Object.keys(error).length === 0) {
             alert("el objeto form pasó las validaciones")
@@ -41,7 +41,7 @@ export const useForm = (initialForm, validateForm) => {
         loading,
         response,
         handleChange,
-        handeBlur,
+        handleBlur,
         handleSubmit
     }
 }

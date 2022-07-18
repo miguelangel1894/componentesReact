@@ -1,0 +1,43 @@
+.DashboardCard-container{
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    background: #124040;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: -1;
+    position: relative;
+}
+
+.DashboardCard-container ion-icon{
+    margin-top: 13px;
+    margin-left: 13px;
+    font-size: 40px;
+    position: absolute;
+}
+
+.DashboardCard-container .card-title{
+    margin-left: 14px;
+    margin-top: 54px;
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+.DashboardCard-container .card-count-users{
+    margin-left: 15px;
+    margin-top: 79px;
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+.DashboardCard-container .card-subtitle{
+    margin-left: 112px;
+    margin-top: 89px;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}

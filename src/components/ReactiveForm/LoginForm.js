@@ -46,30 +46,30 @@ const LoginForm = () => {
             loading,
             response,
             handleChange,
-            handeBlur,
+            handleBlur,
             handleSubmit} = useForm(initialForm, validationsForm)
 
     return(
-        <div>
+        <div className="loginForm">
             <form className="LoginForm" onSubmit={handleSubmit}>
                 <h2>Formulario ejemplo de inicio de sesión</h2>
                 <input type="text" name="name" 
                         placeholder="Escribe tu nombre" 
-                        onBlur={handeBlur} 
+                        onBlur={handleBlur} 
                         onChange={handleChange} 
                         value={form.name}/>
                         {error.name && <p style={styles}>{error.name}</p>}
 
                 <input type="text" name="email" 
                         placeholder="Escribe tu email" 
-                        onBlur={handeBlur} 
+                        onBlur={handleBlur} 
                         onChange={handleChange} 
                         value={form.email}/>
                         {error.email && <p style={styles}>{error.email}</p>}
 
                 <input type="text" name="subject" 
                         placeholder="Escribe tu asunto" 
-                        onBlur={handeBlur} 
+                        onBlur={handleBlur} 
                         onChange={handleChange} 
                         value={form.subject}/>
                         {error.subject && <p style={styles}>{error.subject}</p>}
@@ -79,7 +79,7 @@ const LoginForm = () => {
                         rows="1" 
                         placeholder="Esribe tus comentarios" 
                         value={form.comments} 
-                        onBlur={handeBlur} 
+                        onBlur={handleBlur} 
                         onChange={handleChange}
                         required>
                         </textarea>

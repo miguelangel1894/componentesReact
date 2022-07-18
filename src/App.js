@@ -2,14 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 import LoginForm from "./components/ReactiveForm/LoginForm"
+import { NavBar } from './components/NavBar/NavBar';
+import { Sidebar } from './components/Sidebar/Sidebar';
+import {Dashboard} from './pages/dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <LoginForm />
-      </header>
+      <nav className="App-nav">
+        <NavBar />
+      </nav>
+      <aside>
+        <Sidebar/>
+      </aside>
+      <section>
+      <Dashboard/>
+      </section>
     </div>
   );
 }
