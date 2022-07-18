@@ -5,8 +5,11 @@
     background: #124040;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    z-index: -1;
     position: relative;
+}
+
+.DashboardCard-container:hover{
+    background: #215757;
 }
 
 .DashboardCard-container ion-icon{
@@ -40,4 +43,24 @@
     color: white;
     position: absolute;
     font-family: 'Poppins', sans-serif;
+}
+
+.DashboardCard-container .btn-analytics{
+    width: 45px;
+    height: 45px;
+    margin-left: 230px;
+    margin-top: -5px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    background: #d94e5a;
+}
+
+.DashboardCard-container .btn-analytics ion-icon{
+    font-size: 28px;
+    margin: -15px;
+}
+
+.DashboardCard-container .btn-analytics:hover{
+    background: #e45f6a;
 }
